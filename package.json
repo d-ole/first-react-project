@@ -10,7 +10,7 @@
     "test:watch": "npm run test -- --watch",
     "predeploy": "npm run build",
     "deploy": "gh-pages -b master -d build",
-    "build": "webpack-dev-server --config ./webpack.config.js"
+    "build": "webpack -p && webpack-dev-server"
   },
   "author": "",
   "license": "ISC",
