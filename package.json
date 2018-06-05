@@ -9,8 +9,8 @@
     "test": "mocha --compilers js:babel-core/register --require ./test/test_helper.js --recursive ./test",
     "test:watch": "npm run test -- --watch",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -b master -d build",
-    "build": "webpack -p && webpack-dev-server"
+    "deploy": "gh-pages -d build",
+    "build": "webpack-dev-server --config ./webpack.config.js"
   },
   "author": "",
   "license": "ISC",
@@ -21,6 +21,7 @@
     "babel-preset-react": "^6.1.18",
     "chai": "^3.5.0",
     "chai-jquery": "^2.0.0",
+    "gh-pages": "^1.2.0",
     "jquery": "^2.2.1",
     "jsdom": "^8.1.0",
     "mocha": "^2.4.5",
@@ -30,7 +31,6 @@
   },
   "dependencies": {
     "babel-preset-stage-1": "^6.1.18",
-    "gh-pages": "^1.2.0",
     "lodash": "^3.10.1",
     "react": "^0.14.3",
     "react-dom": "^0.14.3",
