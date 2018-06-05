@@ -10,7 +10,7 @@ class SearchBar extends Component{
 	render(){
 		return ( 
 			<div className="search-bar">
-				<img src='images/yt-logo.png' />
+				<img src="https://image.ibb.co/jbtvdT/youtube_draw_logo_1.png" />
 				<input 
 					value={this.state.term}
 					onChange={event => this.onInputChange(event.target.value)} 
