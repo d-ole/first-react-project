@@ -1,7 +1,7 @@
 {
   "name": "first-react-project",
   "version": "1.0.0",
-  "homepage": "https://d-ole.github.io/first-react-project/",
+  "homepage": "https://d-ole.github.io/first-react-project",
   "description": "Simple starter package for Redux with React and Babel support",
   "main": "index.js",
   "scripts": {
